@@ -1,0 +1,11 @@
+@import "tailwindcss";
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.product-detail-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
