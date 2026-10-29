@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Lab 2 - Responsive Navbar and Grid</title>
+</head>
+<body>
+    <header>
+        <nav  class=" flex  flex-row items-center justify-between p-0 bg-cyan-950">
+             <img src="images/TechNest Gradient Orbital Logo.png"   alt="TechNest Logo" class="w-32 h-auto">
+             <div class="hidden md:flex flex-wrap justify-between items-center gap-3 md:gap-6">
+            <a href="index.html" class="text-white">Home</a>
+            <a href="" class="text-white hover:underline">Phones</a>
+            <a href="" class="text-white hover:underline">Ipad</a>
+            <a href="index.html#products" class="text-white hover:underline">Accessories</a>
+            <a href="index.html#products" class="text-white hover:underline ">Shop</a>
+             </div>
+             <div class="flex items-center gap-3">
+             <a href="#" class="text-2xl text-white p-3">🛒</a>
+
+             <button class="text-white text-2xl md:hidden">☰ </button>
+             </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+        <h1>Our Products</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/headphones.jpg" alt="product 1" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Wireless Headphones</h3>
+                <p class="text-gray-600 mt-2">Price: Rs7,499</p>
+            </article>
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/smartwatch.jpg" alt="product 2" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Smart Watch</h3>
+                <p class="text-gray-600 mt-2">Price: Rs9,999</p>
+            </article>
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/speaker.jpg" alt="product 3" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Bluetooth Speaker</h3>
+                <p class="text-gray-600 mt-2">Price: Rs4,999</p>
+            </article>                  
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/charger.jpg" alt="product 4" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Fast Charger</h3>
+                <p class="text-gray-600 mt-2">Price: Rs1,499</p>
+            </article>
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/case.jpg" alt="product 5" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Phone Case</h3>
+                <p class="text-gray-600 mt-2">Price : Rs999</p>
+            </article>
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/earbuds.jpg" alt="product 6" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Wireless Earbuds</h3>
+                <p class="text-gray-600 mt-2">Price: Rs3,499</p>
+            </article>  
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/powerbank.jpg" alt="product 7" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Power Bank</h3>
+                <p class="text-gray-600 mt-2">Price: Rs2,499</p>
+            </article>
+            <article class="bg-white rounded shadow hover:bg-gray-100 p-4 transition duration-300">
+                 <img src="images/keyboard.jpg" alt="product 8" class="product-image">
+                <h3 class="text-lg text-gray-600 mt-4">Mechanical Keyboard</h3>
+                <p class="text-gray-600 mt-2">Price: Rs5,999</p>
+            </article>
+           
+        </div>
+        </section>
+        
+
+    </main>
+    
+</body>
+</html>
