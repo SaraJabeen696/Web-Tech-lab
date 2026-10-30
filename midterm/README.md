@@ -1,77 +1,61 @@
-# TechNest — E-commerce Website
 
-## Project Description
+# Web Development Midterm Exam
 
-TechNest is a static and responsive e-commerce website designed for selling electronic gadgets and tech accessories. The website features a collection of products such as wireless headphones, earbuds, smartwatches, computer accessories, and other electronic devices.
+**Name:** Sara Jabeen  
+**Registration Number:** FA24-BCS-100
 
-The website is designed to provide a simple, clean, and user-friendly shopping experience across mobile, tablet, and desktop screens.
+## Project Overview
+
+This project is an extension of my existing Assignment-2 TechNest ecommerce website. Three midterm tasks have been implemented in the existing project.
+
+## Task 1 – Category Filtering
+
+- Implemented product category filtering.
+- Added All, Audio, Wearables and Accessories filters.
+- Used HTML radio buttons and CSS selectors.
+- Tested filtering on desktop, tablet and mobile screens.
+
+## Task 2 – Product Detail Page
+
+- Redesigned the product detail page using CSS Grid.
+- Implemented named grid-template-areas.
+- Added sticky positioning to the product details section.
+- Used a 70px sticky top offset.
+- Added responsive layouts for different screen sizes.
+
+## Task 3 – JavaScript Functionality
+
+- Implemented live product search.
+- Added case-insensitive search.
+- Combined category filtering with live search.
+- Added a No Products Found message.
+- Implemented alternating ascending and descending price sorting.
+- Used appendChild() to reorder existing product cards.
+- Added dynamic Premium labels.
 
 ## Technologies Used
 
-- HTML5 — For creating the structure of the website.
-- CSS3 — For custom styling and design.
-- Tailwind CSS v4 — For responsive layouts, grids, navigation, and styling.
+- HTML5
+- CSS3
+- Tailwind CSS 4
+- Vanilla JavaScript
 
-## Reference Website
+## How to Run
 
-**Website Name:** Apple Store
+1. Open the midterm project folder in VS Code.
+2. Open the terminal in the project folder.
+3. Run the Tailwind CSS build command:
 
-**Website URL:** https://www.apple.com/shop
+   npx @tailwindcss/cli -i "./style.css" -o "./output.css" --watch
 
-TechNest takes design inspiration from the Apple Store's clean product presentation and minimalist layout. The website uses its own branding, colors, and page structure.
+4. Open index.html using Live Server.
 
-![alt text](image-1.png)
+## Testing
 
-## Website Features
+The project was tested using desktop, tablet and mobile viewport sizes.
 
-- Responsive navigation bar with a shopping cart icon.
-- Homepage with eight electronic products.
-- Product cards displaying images, names, prices, and Add to Cart buttons.
-- Individual product detail page for Wireless Headphones.
-- Product description, color selection, and quantity selection.
-- Responsive layouts using Tailwind CSS Grid and Flexbox.
-- Consistent navigation and footer across both pages.
-- CSS hover effects and transitions.
+Screenshots and implementation details are provided in the midterm documentation PDF.
 
-## Responsive Design
+## Documentation
 
-The website has been designed and tested for the following screen widths:
-
-- Mobile: 375px
-- Tablet: 768px
-- Desktop: 1440px
-
-The product grid adjusts automatically according to the screen size.
-
-## How to Run the Project
-
-1. Open the `assignment-2` folder in Visual Studio Code.
-2. Open `index.html` using the Live Server extension or a web browser.
-3. Browse the products on the homepage.
-4. Click the Wireless Headphones product image to open `product.html`.
-
-If the compiled `output.css` file needs to be regenerated, install the project dependencies using `npm install` and run:
-
-```bash
-npx @tailwindcss/cli -i ./style.css -o ./output.css --watch
-```
-
-## Project Pages
-
-**index.html:** Homepage containing the navigation bar, hero section, product listing, and footer.
-
-**product.html:** Product detail page displaying the selected product's image, price, description, color options, quantity selector, and Add to Cart button.
-
-## Note
-
-This project is developed for Assignment 2 of the Web Technologies course. It is a static website, so the Add to Cart buttons do not currently perform any actions. Shopping cart functionality, form validation, and dynamic product loading will be implemented in later assignments.
-
-## Developed By
-
-Student Name:Sara Jabeen
-
-Course: Web Technologies
-
-Assignment: 2 — Static Responsive E-commerce Website
-
-Project Name: TechNest
+MIDDTERM_SARA-JABEEN_FA24-BCS-100.pdf

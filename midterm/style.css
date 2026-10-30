@@ -109,3 +109,8 @@
     }
 
 }
+/* Task 3 - Premium Label */
+
+.premium-label {
+    background-color: hsl(0, 70%, 45%);
+}
