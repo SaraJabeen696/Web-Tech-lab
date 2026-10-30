@@ -56,3 +56,56 @@
 .product-grid .product-card:not([data-category="accessories"]) {
     display: none;
 }
+
+
+/* =================================
+   MIDTERM TASK 2 - PRODUCT PAGE
+   N = 0
+   BP = 600px
+   STICKY TOP = 70px
+================================= */
+
+/* Mobile layout - below 600px */
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image"
+        "details"
+        "description";
+    gap: 30px;
+}
+
+.product-image-area {
+    grid-area: image;
+}
+
+.product-details-area {
+    grid-area: details;
+}
+
+.product-description-area {
+    grid-area: description;
+}
+
+/* Desktop layout - 600px and above */
+
+@media (min-width: 600px) {
+
+    .product-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "image details"
+            "description description";
+        gap: 32px;
+        align-items: start;
+    }
+
+    .product-details-area {
+        position: sticky;
+        top: 70px;
+        align-self: start;
+    }
+
+}
