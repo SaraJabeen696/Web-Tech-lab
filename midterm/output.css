@@ -409,6 +409,36 @@
   height: 400px;
   object-fit: contain;
 }
+.category-filter input {
+  position: absolute;
+  opacity: 0;
+}
+.category-filter label {
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #374151;
+  transition: 0.3s;
+}
+.category-filter input:checked + label {
+  background-color: hsl(0, 70%, 45%);
+  color: white;
+  border-color: hsl(0, 70%, 45%);
+}
+.category-filter input:focus-visible + label {
+  outline: 2px solid hsl(0, 70%, 45%);
+  outline-offset: 3px;
+}
+.products-section:has(#filter-audio:checked) .product-grid .product-card:not([data-category="audio"]) {
+  display: none;
+}
+.products-section:has(#filter-wearables:checked) .product-grid .product-card:not([data-category="wearables"]) {
+  display: none;
+}
+.products-section:has(#filter-accessories:checked) .product-grid .product-card:not([data-category="accessories"]) {
+  display: none;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;

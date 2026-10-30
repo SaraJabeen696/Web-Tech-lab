@@ -31,61 +31,81 @@
             <a href="#products" class="inline-block  bg-cyan-800 text-white py-3 px-6 rounded hover:bg-cyan-700 mt-4">Shop Now</a>
             
         </section>
-        <section id="products">
-            <h2 class="p-2">Shop our products</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                    <a href="product.html">
+       <section id="products" class="products-section">
+
+    <h2 class="p-2">Shop our products</h2>
+
+    <!-- Category Filter -->
+    <div class="category-filter flex flex-wrap gap-3 p-2">
+
+        <input type="radio" name="category" id="filter-all" checked>
+        <label for="filter-all">All</label>
+
+        <input type="radio" name="category" id="filter-audio">
+        <label for="filter-audio">Audio</label>
+
+        <input type="radio" name="category" id="filter-wearables">
+        <label for="filter-wearables">Wearables</label>
+
+        <input type="radio" name="category" id="filter-accessories">
+        <label for="filter-accessories">Accessories</label>
+
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article data-category="audio" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <a href="product.html">
                 <img src="images/headphones.jpg" alt="Wireless Headphones" class="product-image">
-                    </a>
-                <h3 class="text-lg text-gray-600 mt-4">Wireless Headphones</h3>
-                <p class="text-gray-600 mt-2">Price: Rs7,499</p>
-                <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                <img src="images/earbuds.jpg" alt="Earbuds" class="product-image">
-                <h3 class="text-lg text-gray-600 mt-7">Earbuds</h3>
-                <p class="text-gray-600 mt-2">Price: Rs20,000</p>
-                <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                <img src="images/smartwatch.webp" alt="Smartwatch" class="product-image">
-                <h3 class="text-lg text-gray-600 mt-6">Smartwatch</h3>
-                <p class="text-gray-600 mt-2">Price: Rs15,000</p>
-                <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                    <img src="images/mouse.jpeg" alt="Mouse" class="product-image">
-                    <h3 class="text-lg text-gray-600 mt-4">Mouse</h3>
-                    <p class="text-gray-600 mt-2">Price: Rs3,499</p>
-                    <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>  
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                    <img src="images/charger.jpg" alt="Charger" class="product-image">
-                    <h3 class="text-lg text-gray-600 mt-4">Charger</h3>
-                    <p class="text-gray-600 mt-2">Price: Rs2,499</p>
-                    <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>  
-                <article class="bg-white p-4 rounded shadow hover:bg-gray-100  transition duration-300">
-                <img src="images/powerbank.jpeg" alt="Power Bank" class="product-image">
-                    <h3 class="text-lg text-gray-600 mt-6">Power Bank</h3>
-                    <p class="text-gray-600 mt-2">Price: Rs1,999</p>
-                    <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-                <article class="bg-white p-4 shadow rounded hover:bg-gray-100  transition duration-300">
-                    <img src="images/bluetoothspeaker.webp" alt="Bluetooth Speaker" class="product-image">
-                    <h3 class="text-lg text-gray-600 mt-4">Bluetooth Speaker</h3>
-                    <p class="text-gray-600 mt-2">Price: Rs49,999</p>
-                    <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-                <article class="bg-white p-4 shadow rounded hover:bg-gray-100  transition duration-300">
-                    <img src="images/usb.jpg" alt="USB Drive" class="product-image">
-                    <h3 class="text-lg text-gray-600 mt-4">USB-C Hub</h3>
-                    <p class="text-gray-600 mt-2">Price: Rs1,999</p>
-                    <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
-                </article>
-            </div>  
-        </section>
+            </a>
+            <h3 class="text-lg text-gray-600 mt-4">Wireless Headphones</h3>
+            <p class="text-gray-600 mt-2">Price: Rs7,499</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="audio" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <img src="images/earbuds.jpg" alt="Earbuds" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-7">Earbuds</h3>
+            <p class="text-gray-600 mt-2">Price: Rs20,000</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="wearables" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <img src="images/smartwatch.webp" alt="Smartwatch" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-6">Smartwatch</h3>
+            <p class="text-gray-600 mt-2">Price: Rs15,000</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="accessories" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <img src="images/mouse.jpeg" alt="Mouse" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-4">Mouse</h3>
+            <p class="text-gray-600 mt-2">Price: Rs3,499</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="accessories" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <img src="images/charger.jpg" alt="Charger" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-4">Charger</h3>
+            <p class="text-gray-600 mt-2">Price: Rs2,499</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="accessories" class="product-card bg-white p-4 rounded shadow hover:bg-gray-100 transition duration-300">
+            <img src="images/powerbank.jpeg" alt="Power Bank" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-6">Power Bank</h3>
+            <p class="text-gray-600 mt-2">Price: Rs1,999</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="audio" class="product-card bg-white p-4 shadow rounded hover:bg-gray-100 transition duration-300">
+            <img src="images/bluetoothspeaker.webp" alt="Bluetooth Speaker" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-4">Bluetooth Speaker</h3>
+            <p class="text-gray-600 mt-2">Price: Rs49,999</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+        <article data-category="accessories" class="product-card bg-white p-4 shadow rounded hover:bg-gray-100 transition duration-300">
+            <img src="images/usb.jpg" alt="USB Drive" class="product-image">
+            <h3 class="text-lg text-gray-600 mt-4">USB-C Hub</h3>
+            <p class="text-gray-600 mt-2">Price: Rs1,999</p>
+            <button class="bg-cyan-800 text-white py-2 px-4 rounded hover:bg-cyan-700 mt-4">Add to Cart</button>
+        </article>
+    </div>
+</section>
     </main>
   <footer class=" bg-cyan-950 text-white p-2"> 
   <h2  class="text-2xl font-bold">TechNest</h2>
