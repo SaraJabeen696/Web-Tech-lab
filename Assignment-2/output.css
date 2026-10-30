@@ -185,6 +185,15 @@
   .static {
     position: static;
   }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .z-50 {
+    z-index: 50;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -230,6 +239,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -241,6 +253,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -271,6 +286,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-0 {
+    padding: 0px;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -297,12 +315,6 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
-  }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
-  }
-  .pl-1 {
-    padding-left: var(--spacing);
   }
   .text-center {
     text-align: center;
@@ -372,6 +384,9 @@
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:gap-6 {
+      gap: calc(var(--spacing) * 6);
     }
     .md\:text-4xl {
       font-size: var(--text-4xl);
